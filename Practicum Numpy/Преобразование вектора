@@ -1,0 +1,6 @@
+import numpy as np
+l=[int(i) for i in input().split(', ')]
+m=[int(i) for i in input().split(', ')]
+V1=np.array(l)
+V2=np.array(m)
+V=V1[V1%V2[-2]==0]/V2[-2]
