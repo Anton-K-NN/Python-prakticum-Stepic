@@ -1,0 +1,4 @@
+import pandas as pd
+namesofcolumns=df.select_dtypes(include=['number']).columns
+for name in namesofcolumns:
+    print(name+':'+str(df[name].sum()))
